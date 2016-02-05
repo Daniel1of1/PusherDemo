@@ -1,0 +1,1 @@
+let thing = someString.componentsSeparatedByString("\\\"")[13].stringByReplacingOccurrencesOfString("\\u0026", withString:"\\&")
