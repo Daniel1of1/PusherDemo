@@ -4,6 +4,8 @@ This was a quick proof of concept with the idea of showing the simplest feature 
 
 Below is a gif of the whole process (with time spent compiling clipped out)
 
+![](https://github.com/Daniel1of1/PusherDemo/raw/master/pusherd.gif)
+
 # Requirements
 
 - [CocoaPods](https://cocoapods.org) 1.0.0.beta.3
