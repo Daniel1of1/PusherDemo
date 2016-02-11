@@ -29,8 +29,8 @@ There are two parts to how this works.
 1. The first part is the (rather plain looking 😖 ) app. This is just a very simple "Single View Controller app" which uses the [libPusher](https://github.com/lukeredpath/libPusher) library, to subscribe a channel that we define in the setup command (explained below) and pop up the message we receive from the channel.
 
 2. The second part is a 'setup' process, in which we have a pre install script that 
-	- 1. checks where `PUSHER_DEMO_CHANNEL` environment variable exists (exits if not). 
-	- 2. it writes the value to a temporary file, which is then read by the app to know which app to subscribe to.
+	- checks where `PUSHER_DEMO_CHANNEL` environment variable exists (exits if not). 
+	- writes the value to a temporary file, which is then read by the app to know which app to subscribe to. (this could probably be done in a much less fallible )
 
 Most of the functionality relies on [cocoapods-try](https://github.com/cocoapods/cocoapods-try). A cocoapods plugin bundled with CocoaPods. 'try' was created to allow users to try a certain library, usually in the context of a demo app. for example `pod try Alomafire`. Try allows you to define pre-install hooks that are intented to help setup the project for demo use. You can see this in `.cocoapods.yml`
 
