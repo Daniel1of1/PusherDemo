@@ -30,7 +30,7 @@ There are two parts to how this works.
 
 2. The second part is a 'setup' process, in which we have a pre install script that 
 	- checks where `PUSHER_DEMO_CHANNEL` environment variable exists (exits if not). 
-	- writes the value to a temporary file, which is then read by the app to know which app to subscribe to. (this could probably be done in a much less fallible )
+	- writes the value to a temporary file, which is then read by the app to know which app to subscribe to. (this could probably be done in a much less fallible manner.)
 
 Most of the functionality relies on [cocoapods-try](https://github.com/cocoapods/cocoapods-try). A cocoapods plugin bundled with CocoaPods. 'try' was created to allow users to try a certain library, usually in the context of a demo app. for example `pod try Alomafire`. Try allows you to define pre-install hooks that are intented to help setup the project for demo use. You can see this in `.cocoapods.yml`
 
